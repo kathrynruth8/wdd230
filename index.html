@@ -5,14 +5,54 @@
     <link rel="stylesheet" href="styles/index.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 1</title>
+    <meta name="author" content="Kathryn Lambert" />
+    <meta
+      name="description"
+      content="Kathryn Lambert's course assignment portal for WDD-230 Web Frontend Development."
+    />
+    <title>Kathryn Lambert - WDD 230 - Web Frontend Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DM Serif Display, DM Sans -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <img src="#" alt="Profile Image" />
+      <h1>Kathryn Lambert</h1>
+    </header>
+    <nav>
+      <!-- ul>li*4 -> 4 lists -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Site Plan</a></li>
+        <li><a href="#">Form</a></li>
+      </ul>
+    </nav>
     <main>
-      <h1>Lesson 1</h1>
+      <h2>WDD 230: Web Frontend Development</h2>
+      <section class="card">
+        <h3>Learning Activities</h3>
+        <ul>
+          <li><a href="#"></a></li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Information</h3>
+        <section id="weather"></section>
+        <section id="visits"></section>
+      </section>
     </main>
-    <footer></footer>
-    <script src="scripts/index.js"></script>
+    <footer>
+      <p>&copy; <span id="year"></span> Kathryn Lambert MN</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
   </body>
 </html>
