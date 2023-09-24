@@ -9,7 +9,7 @@ body {
 }
 
 footer {
-  background-color: #527a6d;
+  background-color: #39564d;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -17,7 +17,7 @@ footer {
 }
 
 footer p {
-  font-size: medium;
+  font-size: large;
 }
 
 h2 {
@@ -51,7 +51,7 @@ nav ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #527a6d;
+  background-color: #39564d;
   list-style: none;
   padding: 1rem;
   height: 100px;
@@ -83,7 +83,7 @@ p {
 }
 
 .card h3 {
-  background-color: #527a6d;
+  background-color: #39564d;
   color: white;
   text-align: center;
   padding: 1rem;
