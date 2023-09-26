@@ -96,6 +96,10 @@ p {
   font-family: "DM Sans", sans-serif;
 }
 
+.card li :hover {
+  color: #daf2ec;
+}
+
 .card p {
   color: white;
   text-align: center;
