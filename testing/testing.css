@@ -1,0 +1,8 @@
+p {
+  font-size: 120px;
+}
+
+.markcomplete:last-child {
+  font-size: x-large;
+  content: "X";
+}
