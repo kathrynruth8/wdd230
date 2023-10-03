@@ -4,12 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kathryn Lambert" />
+    <meta
+      name="description"
+      content="Kathryn Lambert's course assignment portal for WDD-230 Web Frontend Development."
+    />
+    <meta property="og:url" content="https://kathrynruth8.github.io/wdd230/" />
+    <meta property="og:title" content="WDD230 Assignment Portal" />
+    <meta property="og:type" content="Article" />
+    <meta property="og:image" content="images/kathryn-small.jpeg" />
+    <title>Kathryn Lambert - WDD 230 - Web Frontend Development</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
     <link rel="stylesheet" href="testing.css" />
     <link rel="stylesheet" href="largertesting.css" />
-    <title>Testing</title>
+    <link rel="stylesheet" href="burgerstyles.css" />
+    <link rel="icon" href="lesson02/images/favicon.ico" />
   </head>
   <body>
-    <h1>THis is H1</h1>
-    <p>THis is paragraph</p>
+    <header>
+      <img src="images/kathryn-small.jpeg" alt="Profile Image" />
+      <h1>Kathryn Lambert</h1>
+    </header>
+    <button id="menu"></button>
+    <nav>
+      <!-- ul>li*4 -> 4 lists -->
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="lesson01/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="#">Form</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>WDD 230: Web Frontend Development</h2>
+      <section class="card">
+        <h3>Learning Activities</h3>
+        <ul>
+          <ul>
+            Lesson 01
+          </ul>
+          <li><a href="lesson01/holygrail.html">Holy Grail</a></li>
+          <li><a href="lesson01/media-query.html">Media Query</a></li>
+          <ul>
+            Lesson 2
+          </ul>
+          <li><a href="lesson02/bom.html">DOM Manipulation</a></li>
+          <li><a href="lesson02/design.html">Web Design Principles</a></li>
+          <li><a href="lesson02/hamburger.html">Hamburger Menu</a></li>
+          <ul>
+            Lesson 3:
+          </ul>
+          <ul>
+            Lesson 4:
+          </ul>
+          <ul>
+            Lesson 5:
+          </ul>
+          <ul>
+            Lesson 6:
+          </ul>
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Information</h3>
+        <section id="weather"></section>
+        <section id="visits"></section>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> | Kathryn Lambert | MN</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="/lesson02/scripts/hamburger.js"></script>
   </body>
 </html>

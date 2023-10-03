@@ -1,8 +1,149 @@
-p {
-  font-size: 120px;
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap");
+
+/* html selectors */
+body {
+  margin: auto;
+  font-family: "DM Serif Display", Serif;
+  background-color: white;
 }
 
-.markcomplete:last-child {
-  font-size: x-large;
-  content: "X";
+footer {
+  background-color: #39564d;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: -25px;
+}
+
+footer p {
+  font-size: large;
+}
+
+h2 {
+  color: #3e4943;
+  padding-left: 2rem;
+  font-family: "DM Sans", sans-serif;
+  margin: 2%;
+}
+
+header {
+  display: flex;
+  background-color: #daf2ec;
+  color: #39564d;
+  padding: 0.5rem;
+}
+
+header img {
+  width: 75px;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+main ul {
+  padding-left: 1em;
+}
+nav {
+  margin-top: -17px;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #39564d;
+  list-style: none;
+  padding: 1rem;
+  height: 100px;
+}
+
+nav a:hover {
+  color: #daf2ec;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* class selectors */
+.card {
+  border: groove #39564d;
+  margin: 1rem 0rem;
+}
+
+.card a {
+  color: #39564d;
+  text-decoration: none;
+}
+
+.card h3 {
+  background-color: #39564d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-block-start: 0px;
+}
+
+.card li {
+  margin: 2%;
+  margin-left: 6%;
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+.card ul {
+  margin: 2%;
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+.card li :hover {
+  color: #daf2ec;
+}
+
+.card p {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: Large;
+}
+
+/* id selectors */
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#menu::before {
+  content: "☰";
+}
+#menu.open::before {
+  content: "x";
+}
+.navigation {
+  display: none;
+}
+.open li {
+  display: block;
+  width: 100%;
+}
+.open li a {
+  display: block;
+}
+
+.navigation.open {
+  display: flex;
 }
