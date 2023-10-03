@@ -22,7 +22,8 @@ footer p {
 
 h2 {
   color: #3e4943;
-  padding-left: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
   font-family: "DM Sans", sans-serif;
   margin: 2%;
 }
@@ -117,3 +118,32 @@ p {
 }
 
 /* id selectors */
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#menu::before {
+  content: "☰";
+}
+#menu.open::before {
+  content: url(https://img.icons8.com/?size=48&id=23537&format=png);
+}
+.navigation {
+  display: none;
+}
+.open li {
+  display: list-item;
+}
+.open li a {
+  display: block;
+}
+
+.navigation.open {
+  display: flex;
+}

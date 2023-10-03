@@ -9,9 +9,18 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
+  h2 {
+    padding-top: 1rem;
+  }
 
   .card {
     margin: 1rem 0.5rem;
     grid-row: 2/3;
+  }
+  #menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
   }
 }
