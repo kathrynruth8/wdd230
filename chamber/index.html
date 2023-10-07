@@ -11,7 +11,10 @@
       name="description"
       content="Homepage for the Anoka Minnesota Chamber of Commerce">
     <!-- Social Media Meta Tags -->
-    <meta property="og:url" content="https://kathrynruth8.github.io/wdd230/" />
+    <meta
+      property="og:url"
+      content="https://kathrynruth8.github.io/wdd230/chamber/"
+    />
     <meta property="og:title" content="Anoka, MN Chamber of Commerce" />
     <!-- prettier-ignore -->
     <meta property="og:type" content="article">
@@ -20,9 +23,95 @@
       property="og:image"
       content="https://afar.brightspotcdn.com/dims4/default/0b10150/2147483647/strip/false/crop/2000x1125+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F38%2Fda%2F5212b6d28b153d2254fc8d6cb1ab%2Foriginal-anokas-20roundabout-5b2-5d.jpg"
     >
-    <title>Chamber Home Page</title>
+    <title>Anoka Minnesota Chamber | Home Page</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css." />
+    <link rel="icon" href="images/favicon.png" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="images/anoka-logo.png" alt="Anoka Chamber of Commerce Logo" />
+      <h1>Anoka Chamber of Commerce</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About The Chamber</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h2>Get Involved with your community.</h2>
+          <p>Join the Anoka Chamber of Commerce</p>
+          <!-- prettier-ignore -->
+          <button class="button-box">
+            <a href="https://anokaareachamber.com/members/member-application/">Join Us!</a>
+          </button>
+        </div>
+        <img
+          src="images/anoka-hero.jpeg"
+          alt="Pumpkin roundabout in Anoka, MN"
+        />
+      </div>
+      <section class="card">
+        <h2>Events in Anoka</h2>
+        <ul>
+          <li>Chamber Calendar</li>
+          <li>Annual Chamber Gala</li>
+          <li>Annual Chamber Gala</li>
+          <li>Anoka Riverfest</li>
+          <li>Anoka Halloween</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>Weather in Anoka</h2>
+        <ul>
+          <li>This is the weather in Anoka Minnesota</li>
+        </ul>
+      </section>
+      <section class="spotlights">
+        <h2>Spotlights</h2>
+        <section class="card">
+          <h3>Spotlight 1</h3>
+          <ul>
+            <li>This will have stuff about spotlight 1</li>
+            <li>Spotlight 1 Email</li>
+            <li>Spotlight 1 Phone</li>
+            <li>Spotlight 1 Website</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h3>Spotlight 2</h3>
+          <ul>
+            <li>This will have stuff about spotlight 2</li>
+            <li>Spotlight 2 Email</li>
+            <li>Spotlight 2 Phone</li>
+            <li>Spotlight 2 Website</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h3>Spotlight 3</h3>
+          <ul>
+            <li>This will have stuff about spotlight 3</li>
+            <li>Spotlight 3 Email</li>
+            <li>Spotlight 3 Phone</li>
+            <li>Spotlight 3 Website</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> | WDD230 Chamber of Commerce Project |
+        Kathryn Lambert - lam20005@byui.edu | MN
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+  </body>
 </html>
