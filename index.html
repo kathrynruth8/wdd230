@@ -32,6 +32,7 @@
         <li><a href="#">Chamber</a></li>
         <li><a href="lesson01/chamber-site-plan.html">Site Plan</a></li>
         <li><a href="#">Form</a></li>
+        <li class="darkButton"><button id="mode">☑</button></li>
       </ul>
     </nav>
     <main>
@@ -39,29 +40,46 @@
       <section class="card">
         <h3>Learning Activities</h3>
         <ul>
-          <ul>
-            Lesson 01
-          </ul>
-          <li><a href="lesson01/holygrail.html">Holy Grail</a></li>
-          <li><a href="lesson01/media-query.html">Media Query</a></li>
-          <ul>
-            Lesson 2
-          </ul>
-          <li><a href="lesson02/bom.html">DOM Manipulation</a></li>
-          <li><a href="lesson02/design.html">Web Design Principles</a></li>
-          <li><a href="lesson02/hamburger.html">Hamburger Menu</a></li>
-          <ul>
-            Lesson 3:
-          </ul>
-          <ul>
-            Lesson 4:
-          </ul>
-          <ul>
-            Lesson 5:
-          </ul>
-          <ul>
-            Lesson 6:
-          </ul>
+          <li class="lesson"><a> Lesson 01 </a></li>
+          <li>
+            <ul class="inside">
+              <li><a href="lesson01/holygrail.html">Holy Grail</a></li>
+              <li><a href="lesson01/media-query.html">Media Query</a></li>
+            </ul>
+          </li>
+          <li class="lesson"><a> Lesson 02 </a></li>
+          <li>
+            <ul class="inside">
+              <li><a href="lesson02/bom.html">DOM Manipulation</a></li>
+              <li><a href="lesson02/design.html">Web Design Principles</a></li>
+              <li><a href="lesson02/hamburger.html">Hamburger Menu</a></li>
+            </ul>
+          </li>
+          <li class="lesson"><a> Lesson 03 </a></li>
+          <li>
+            <ul class="inside">
+              <li></li>
+            </ul>
+          </li>
+
+          <li class="lesson"><a> Lesson 04 </a></li>
+          <li>
+            <ul class="inside">
+              <li></li>
+            </ul>
+          </li>
+          <li class="lesson"><a> Lesson 05 </a></li>
+          <li>
+            <ul class="inside">
+              <li></li>
+            </ul>
+          </li>
+          <li class="lesson"><a> Lesson 06 </a></li>
+          <li>
+            <ul class="inside">
+              <li></li>
+            </ul>
+          </li>
         </ul>
       </section>
       <section class="card">
@@ -75,6 +93,7 @@
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script src="lesson02/scripts/hamburger.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
   </body>
 </html>

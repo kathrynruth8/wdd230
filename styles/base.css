@@ -40,7 +40,9 @@ header img {
   justify-content: space-around;
   margin-right: 20px;
 }
-
+main {
+  margin-top: -17px;
+}
 main ul {
   padding-left: 1em;
 }
@@ -92,21 +94,25 @@ p {
 }
 
 .card li {
+  list-style: none;
+}
+
+.inside {
   margin: 2%;
-  margin-left: 6%;
+  margin-left: 2%;
   list-style: none;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
 }
 
-.card ul {
+.lesson {
   margin: 2%;
   list-style: none;
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
 }
 
-.card li :hover {
+.inside :hover {
   color: #daf2ec;
 }
 
@@ -128,11 +134,13 @@ p {
   top: 1rem;
   right: 1rem;
 }
+
+/* hamburger */
 #menu::before {
-  content: url(https://img.icons8.com/ios/50/menu-squared-2.png);
+  content: "☰";
 }
 #menu.open::before {
-  content: url(https://img.icons8.com/?size=48&id=23537&format=png);
+  content: "✕";
 }
 .navigation {
   display: none;
@@ -146,4 +154,22 @@ p {
 
 .navigation.open {
   display: flex;
+}
+
+/* dark mode */
+.darkMode {
+  background-color: #293d37;
+  color: white;
+}
+
+.darkMode li a {
+  color: white;
+}
+.darkMode h2 {
+  color: white;
+}
+.darkButton {
+  padding: 16px;
+  align-items: center;
+  align-content: center;
 }
