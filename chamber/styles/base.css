@@ -28,10 +28,10 @@ header img {
 h1 {
   font-family: 'Staatliches', sans-serif;
   color: #d3eaee;
-  margin: 10px;
 }
 nav {
   margin-top: -17px;
+  margin-bottom: -37px;
 }
 nav ul {
   display: flex;
@@ -60,18 +60,16 @@ nav li:hover {
 /* class selectors */
 .hero-image img {
   width: 100%;
-  margin-top: -17px;
+  margin-top: -92px;
 }
 h2 {
   font-family: 'Staatliches', sans-serif;
 }
 .hero-text {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
   color: white;
+  position: relative;
+  top: 200px;
 }
 .button-box {
   text-align: center;
@@ -110,7 +108,38 @@ h2 {
 .card h3 {
   color: #2d3047;
   font-family: 'Staatliches', sans-serif;
-  text-align: left;
+  text-align: center;
   padding-left: 10px;
 }
 /* id selectors */
+
+/* hamburger */
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+#menu::before {
+  content: '☰';
+}
+#menu.open::before {
+  content: '✕';
+}
+.navigation {
+  display: none;
+}
+.open li {
+  display: list-item;
+}
+.open li a {
+  display: block;
+}
+
+.navigation.open {
+  display: flex;
+}
