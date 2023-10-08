@@ -113,6 +113,26 @@ nav ul {
 .spotlights h2 {
   color: #2d3047;
 }
+.spotlights-card {
+  border: 2px solid #2d3047;
+  margin: 10px;
+}
+.spotlights-card h3 {
+  color: #2d3047;
+  font-family: 'Staatliches', sans-serif;
+  text-align: center;
+  padding-left: 10px;
+}
+.spotlights-card li {
+  list-style: none;
+  margin: 12px;
+  text-align: center;
+}
+.spotlights-card ul {
+  list-style: none;
+  padding: 0;
+  color: #2d3047;
+}
 /* id selectors */
 
 /* hamburger */
