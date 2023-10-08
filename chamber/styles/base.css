@@ -13,6 +13,13 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+h1 {
+  font-family: 'Staatliches', sans-serif;
+  color: #d3eaee;
+}
+h2 {
+  font-family: 'Staatliches', sans-serif;
+}
 header {
   width: auto;
   display: flex;
@@ -25,13 +32,25 @@ header img {
   width: 100px;
   justify-content: space-around;
 }
-h1 {
-  font-family: 'Staatliches', sans-serif;
-  color: #d3eaee;
-}
 nav {
   margin-top: -17px;
   margin-bottom: -37px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #d3eaee;
+}
+nav li {
+  padding: 8px;
+}
+
+nav li:hover {
+  background-color: #2d3047;
+  width: 800px;
+  text-align: center;
 }
 nav ul {
   display: flex;
@@ -42,35 +61,8 @@ nav ul {
   list-style: none;
   padding: 1rem;
 }
-nav a {
-  color: white;
-  text-decoration: none;
-}
-nav li {
-  padding: 8px;
-}
-nav a:hover {
-  color: #d3eaee;
-}
-nav li:hover {
-  background-color: #2d3047;
-  width: 800px;
-  text-align: center;
-}
+
 /* class selectors */
-.hero-image img {
-  width: 100%;
-  margin-top: -92px;
-}
-h2 {
-  font-family: 'Staatliches', sans-serif;
-}
-.hero-text {
-  text-align: center;
-  color: white;
-  position: relative;
-  top: 200px;
-}
 .button-box {
   text-align: center;
   font-family: 'Staatliches', sans-serif;
@@ -83,26 +75,9 @@ h2 {
   border: 2px solid #2d3047;
   margin: 10px;
 }
-.card li {
-  list-style: none;
-  margin: 12px;
-  text-align: center;
-}
 .card h2 {
   text-align: center;
   padding: 2px;
-  color: #2d3047;
-}
-.card ul {
-  list-style: none;
-  padding: 0;
-  color: #2d3047;
-}
-.spotlights {
-  padding: 10px;
-  text-align: center;
-}
-.spotlights h2 {
   color: #2d3047;
 }
 .card h3 {
@@ -110,6 +85,33 @@ h2 {
   font-family: 'Staatliches', sans-serif;
   text-align: center;
   padding-left: 10px;
+}
+.card li {
+  list-style: none;
+  margin: 12px;
+  text-align: center;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+  color: #2d3047;
+}
+.hero-image img {
+  width: 100%;
+  margin-top: -92px;
+}
+.hero-text {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 200px;
+}
+.spotlights {
+  padding: 10px;
+  text-align: center;
+}
+.spotlights h2 {
+  color: #2d3047;
 }
 /* id selectors */
 
@@ -139,7 +141,6 @@ h2 {
 .open li a {
   display: block;
 }
-
 .navigation.open {
   display: flex;
 }

@@ -1,0 +1,28 @@
+@media screen and (min-width: 700px) {
+  nav ul {
+    flex-direction: row;
+    height: auto;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+  .hero-image {
+    grid-column: 1/3;
+    margin-top: -17px;
+  }
+  .card {
+    margin: 1rem 0.5rem;
+    grid-row: 2/3;
+  }
+  #menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .spotlights {
+    grid-column: 1/3;
+  }
+}
