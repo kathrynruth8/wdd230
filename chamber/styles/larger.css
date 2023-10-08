@@ -3,6 +3,11 @@
     flex-direction: row;
     height: auto;
   }
+  nav a:hover {
+    background-color: #2d3047;
+    width: auto;
+    text-align: center;
+  }
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;

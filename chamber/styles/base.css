@@ -32,6 +32,9 @@ header img {
   width: 100px;
   justify-content: space-around;
 }
+main {
+  margin-top: -150px;
+}
 nav {
   margin-top: -17px;
   margin-bottom: -37px;
@@ -39,18 +42,16 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+  padding: 10px;
 }
 nav a:hover {
   color: #d3eaee;
-}
-nav li {
-  padding: 8px;
-}
-
-nav li:hover {
   background-color: #2d3047;
   width: 800px;
   text-align: center;
+}
+nav li {
+  padding: 8px;
 }
 nav ul {
   display: flex;
