@@ -66,10 +66,8 @@ nav ul {
 .button-box {
   text-align: center;
   font-family: 'Staatliches', sans-serif;
-}
-.button-box a {
-  text-decoration: none;
-  color: #2d3047;
+  padding-bottom: 50px;
+  margin: 40px;
 }
 .card {
   border: 2px solid #2d3047;
@@ -106,6 +104,19 @@ nav ul {
   position: relative;
   top: 200px;
 }
+.join-box {
+  background-color: white;
+  color: #2d3047;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.join-box:hover {
+  background-color: #417b5a;
+  color: #d3eaee;
+  text-decoration: none;
+  font-size: 18px;
+}
 .spotlights {
   padding: 10px;
   text-align: center;
@@ -133,6 +144,7 @@ nav ul {
   padding: 0;
   color: #2d3047;
 }
+
 /* id selectors */
 
 /* hamburger */
