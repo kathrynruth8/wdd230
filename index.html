@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!-- prettier-ignore -->
+    <meta charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kathryn Lambert" />
@@ -43,7 +44,23 @@
       </ul>
     </nav>
     <main>
-      <h2>WDD 230: Web Frontend Development</h2>
+      <div class="hero">
+        <h2>WDD 230: Web Frontend Development</h2>
+        <picture>
+          <source media="(max-width: 400px)" srcset="Images/hero-small2.webp" />
+          <source
+            media="(max-width: 960px)"
+            srcset="Images/hero-medium2.webp"
+          />
+          <img
+            src="images/hero-large2.webp"
+            alt="Nauvoo Temple"
+            width="1100"
+            height="750"
+          />
+        </picture>
+      </div>
+
       <section class="card">
         <h3>Learning Activities</h3>
         <ul>
