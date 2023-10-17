@@ -89,7 +89,6 @@ p {
   margin-block-start: 0px;
 }
 .card p {
-  color: white;
   text-align: center;
   padding: 1rem;
   font-size: Large;
@@ -169,6 +168,9 @@ p {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+#visits p {
+  color: #000;
 }
 
 /* hamburger */
