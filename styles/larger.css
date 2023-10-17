@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 960px) {
   nav ul {
     flex-direction: row;
     height: auto;
@@ -22,5 +22,17 @@
   }
   .navigation {
     display: flex;
+  }
+  .hero {
+    height: 560px;
+  }
+  .herolabel {
+    top: 180px;
+    left: 70px;
+  }
+  .google-map {
+    grid-column: 1/4;
+    height: 10px;
+    padding-bottom: 40%;
   }
 }

@@ -1,0 +1,9 @@
+@media screen and (min-width: 400px) {
+  .hero {
+    height: 480px;
+  }
+  .herolabel {
+    top: 140px;
+    left: 50px;
+  }
+}
