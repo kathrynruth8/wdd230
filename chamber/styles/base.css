@@ -32,9 +32,9 @@ header img {
   width: 100px;
   justify-content: space-around;
 }
-main {
+/* main {
   margin-top: -150px;
-}
+} */
 nav {
   margin-top: -17px;
   margin-bottom: -37px;
@@ -44,10 +44,9 @@ nav a {
   text-decoration: none;
   padding: 10px;
 }
-nav a:hover {
+nav li:hover {
   color: #d3eaee;
   background-color: #2d3047;
-  width: 800px;
   text-align: center;
 }
 nav li {
@@ -94,6 +93,12 @@ nav ul {
   list-style: none;
   padding: 0;
   color: #2d3047;
+}
+.events {
+  margin-top: 20px;
+}
+.hero-image {
+  margin-top: -151px;
 }
 .hero-image img {
   width: 100%;
