@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: larger;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+table {
+  margin: 0 auto;
+  width: 50%;
+  border: 0.25px solid black;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.5em;
+  border: 0.25px solid black;
+  border-collapse: collapse;
+}
+
+tbody {
+  background-color: #fff;
+  color: #000;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.gray {
+  background-color: #333;
+}
