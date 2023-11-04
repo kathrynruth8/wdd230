@@ -1,81 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Kathryn Lambert" />
+    <meta charset="utf-8" />
     <meta
-      name="description"
-      content="Kathryn Lambert's course assignment portal for WDD-230 Web Frontend Development."
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <meta property="og:url" content="https://kathrynruth8.github.io/wdd230/" />
-    <meta property="og:title" content="WDD230 Assignment Portal" />
-    <meta property="og:type" content="Article" />
-    <meta property="og:image" content="images/kathryn-small.jpeg" />
-    <title>Kathryn Lambert - WDD 230 - Web Frontend Development</title>
-    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Cheney</title>
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="Fill Me In" />
+
     <link rel="stylesheet" href="testing.css" />
-    <link rel="stylesheet" href="largertesting.css" />
-    <link rel="stylesheet" href="burgerstyles.css" />
-    <link rel="icon" href="lesson02/images/favicon.ico" />
   </head>
+
   <body>
     <header>
-      <img src="images/kathryn-small.jpeg" alt="Profile Image" />
-      <h1>Kathryn Lambert</h1>
+      <h1>Course Proposal</h1>
+      <h2>Designing Web Forms</h2>
     </header>
-    <button id="menu"></button>
-    <nav>
-      <!-- ul>li*4 -> 4 lists -->
-      <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Chamber</a></li>
-        <li><a href="lesson01/chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="#">Form</a></li>
+
+    <nav class="clearfix">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li class="active"><a href="#">Propose</a></li>
+        <li><a href="#">Winners</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
     <main>
-      <h2>WDD 230: Web Frontend Development</h2>
-      <section class="card">
-        <h3>Learning Activities</h3>
-        <ul>
-          <ul>
-            Lesson 01
-          </ul>
-          <li><a href="lesson01/holygrail.html">Holy Grail</a></li>
-          <li><a href="lesson01/media-query.html">Media Query</a></li>
-          <ul>
-            Lesson 2
-          </ul>
-          <li><a href="lesson02/bom.html">DOM Manipulation</a></li>
-          <li><a href="lesson02/design.html">Web Design Principles</a></li>
-          <li><a href="lesson02/hamburger.html">Hamburger Menu</a></li>
-          <ul>
-            Lesson 3:
-          </ul>
-          <ul>
-            Lesson 4:
-          </ul>
-          <ul>
-            Lesson 5:
-          </ul>
-          <ul>
-            Lesson 6:
-          </ul>
-        </ul>
-      </section>
-      <section class="card">
-        <h3>Information</h3>
-        <section id="weather"></section>
-        <section id="visits"></section>
-      </section>
+      <h1>Course Proposal Application</h1>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label class="top"
+            >First Name* <input type="text" name="fname" required
+          /></label>
+          <label class="top"
+            >Last Name* <input type="text" name="lname" required
+          /></label>
+          <label class="top"
+            >Phone <input type="tel" name="phone" placeholder="1235551234"
+          /></label>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <label class="top"
+            >Website <input type="url" name="url" placeholder="http://"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Course Information</legend>
+          <div>Audience</div>
+          <label class="sbs">
+            <input type="radio" name="audience" value="beginner" />
+            Beginner</label
+          >
+          <label class="sbs">
+            <input type="radio" name="audience" value="Intermediate" />
+            Intermediate</label
+          >
+          <label class="sbs">
+            <input type="radio" name="audience" value="Advanced" />
+            Advanced</label
+          >
+          <div>Software Needed</div>
+          <label class="sbs">
+            <input type="checkbox" name="code" value="yes" />
+            Coding</label
+          >
+          <label class="sbs">
+            <input type="checkbox" name="client" value="yes" />
+            FTP Client</label
+          >
+          <label class="sbs">
+            <input type="checkbox" name="editing" value="yes" />
+            Photo Editing</label
+          >
+          <label class="sbs">
+            <input type="checkbox" name="process" value="yes" />
+            Preprocessor</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Funding</legend>
+          <label class="top"
+            >Anticipated Completion Date
+            <input type="date" name="completeDate" />
+          </label>
+          <label class="top"
+            >Course Subject
+            <select name="subject">
+              <option value="">Please Select &#9662;</option>
+              <option value="construction">Construction</option>
+              <option value="creative">Creative Professional</option>
+              <option value="data">Data Professional</option>
+              <option value="info">Information Technology</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="software">Software Development</option>
+            </select>
+          </label>
+          <label class="top"
+            >How Many Authors <input type="number" name="authors" />
+          </label>
+          <input type="text" name="”code”" pattern="[A-Za-z0-9]{6,9}" />
+        </fieldset>
+        <input type="submit" value="Propose My Course" class="submitBtn" />
+      </form>
     </main>
-    <footer>
-      <p>&copy; <span id="year"></span> | Kathryn Lambert | MN</p>
-      <p id="lastModified"></p>
-    </footer>
-    <script src="scripts/getDates.js"></script>
-    <script src="/lesson02/scripts/hamburger.js"></script>
+
+    <footer>&copy; &bull; Paul Cheney &bull; 123-555-6789</footer>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>

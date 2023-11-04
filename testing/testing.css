@@ -1,149 +1,165 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap");
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
-/* html selectors */
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
 body {
-  margin: auto;
-  font-family: "DM Serif Display", Serif;
-  background-color: white;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
 }
 
-footer {
-  background-color: #39564d;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  margin-bottom: -25px;
-}
-
-footer p {
-  font-size: large;
-}
-
-h2 {
-  color: #3e4943;
-  padding-left: 2rem;
-  font-family: "DM Sans", sans-serif;
-  margin: 2%;
-}
-
+/*----------- HEADER --------------*/
 header {
-  display: flex;
-  background-color: #daf2ec;
-  color: #39564d;
-  padding: 0.5rem;
+  padding: 0.5rem 2%;
+  background-color: #ddd;
+}
+header h1 {
+  margin: 0;
+}
+header h2 {
+  margin: 0;
+  font-weight: normal;
 }
 
-header img {
-  width: 75px;
-  justify-content: space-around;
-  margin-right: 20px;
-}
-
-main ul {
-  padding-left: 1em;
-}
+/*----------- NAVIGATION --------------*/
 nav {
-  margin-top: -17px;
+  background-color: #666;
 }
 nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #39564d;
-  list-style: none;
-  padding: 1rem;
-  height: 100px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
-nav a:hover {
-  color: #daf2ec;
+nav ul li {
+  float: left;
+  width: 25%;
 }
-
-nav a {
-  color: white;
+nav ul li a {
+  display: block;
+  background-color: #444;
+  color: #eee;
+  border-left: 1px solid #777;
+  padding: 0.5rem 0;
   text-decoration: none;
-  font-size: larger;
-}
-
-p {
-  font-family: "DM Sans", sans-serif;
-}
-
-/* class selectors */
-.card {
-  border: groove #39564d;
-  margin: 1rem 0rem;
-}
-
-.card a {
-  color: #39564d;
-  text-decoration: none;
-}
-
-.card h3 {
-  background-color: #39564d;
-  color: white;
+  font-size: 0.9rem;
   text-align: center;
-  padding: 1rem;
-  margin-block-start: 0px;
+}
+nav ul li:first-child a {
+  border-left: none;
 }
 
-.card li {
-  margin: 2%;
-  margin-left: 6%;
-  list-style: none;
-  font-family: "DM Sans", sans-serif;
-  font-size: 16px;
-}
-
-.card ul {
-  margin: 2%;
-  list-style: none;
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
-}
-
-.card li :hover {
-  color: #daf2ec;
-}
-
-.card p {
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: Large;
-}
-
-/* id selectors */
-#menu {
-  font-size: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 3px 7px 6px;
+nav ul li a:hover {
   background-color: #eee;
-  color: #000;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  color: #333;
 }
-#menu::before {
-  content: "☰";
+nav ul li.active a {
+  background-color: #000;
+  color: #fff;
 }
-#menu.open::before {
-  content: "x";
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 20rem;
 }
-.navigation {
-  display: none;
-}
-.open li {
-  display: block;
-  width: 100%;
-}
-.open li a {
-  display: block;
+/*----------- FORM --------------*/
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
 }
 
-.navigation.open {
-  display: flex;
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  /* background-color: rgb(0, 0, 0, 0.1); */
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  text-align: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+input {
+  background-color: #efac3e;
+}
+/*----------- FOOTER --------------*/
+footer {
+  background-color: #ddd;
+  padding: 0.5rem 2%;
+  text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* TESTING */
+
+a:required {
+  color: red;
+}
+
+a:hover {
+  color: red;
+}
+
+a:valid {
+  color: red;
+}
+
+a:checked {
+  color: red;
 }
