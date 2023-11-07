@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+body {
+  text-align: center;
+}
+main {
+  background-color: #ddd;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #4d4d96;
+}
+h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #4d4d96;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+section {
+  background-color: #b9b9cc;
+  margin: 0.5rem 2rem 0.5rem;
+  border: 1px solid #4d4d96;
+}
+section img {
+  width: 200px;
+  height: auto;
+}
+#cards {
+  margin-top: 2rem;
+}
