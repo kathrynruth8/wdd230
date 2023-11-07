@@ -1,0 +1,33 @@
+{
+    "lastName" : "Lambert",
+    "dateMovedIn" : "2023-10-07",
+    "numberOfPeopleInFamily" : 5,
+    "visitedByBishopric" : false,
+    "familyMembers" : [
+       {
+        "name" : "Mark",
+        "gender" : "Male",
+        "birthdate" : "1967-09-21"
+       },
+       {
+        "name" : "Kristin",
+        "gender" : "Female",
+        "birthdate" : "1968-01-22"
+       },
+       {
+        "name" : "Kathryn",
+        "gender" : "Female",
+        "birthdate" : "2002-02-18"
+       }, 
+       {
+        "name" : "Emma",
+        "gender" : "Female",
+        "birthdate" : "2004-09-31"
+       }, 
+       {
+        "name" : "Hyrum",
+        "gender" : "Male",
+        "birthdate" : "2007-09-21"
+       }  
+    ]
+}
