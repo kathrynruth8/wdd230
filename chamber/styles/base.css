@@ -70,13 +70,16 @@ nav ul {
   margin: 40px;
 }
 .card {
-  border: 2px solid #2d3047;
-  margin: 10px;
+  border: groove #39564d;
+  margin: 1rem 0rem;
+  align-items: center;
 }
 .card h2 {
+  background-color: #39564d;
+  color: white;
   text-align: center;
-  padding: 2px;
-  color: #2d3047;
+  padding: 1rem;
+  margin-block-start: 0px;
 }
 .card h3 {
   color: #2d3047;
@@ -181,4 +184,28 @@ nav ul {
 }
 .navigation.open {
   display: flex;
+}
+
+/* Discover Page */
+.discover-sidebar {
+  background-color: white;
+}
+#discover-page {
+  margin-top: 3rem;
+}
+.image-card img {
+  width: 450px;
+}
+#nov-calendar {
+  margin-top: -10px;
+}
+.card img {
+  width: 95%;
+  margin: 10px;
+}
+
+.card p {
+  font-size: 0.7rem;
+  margin: 10px;
+  margin-top: -10px;
 }

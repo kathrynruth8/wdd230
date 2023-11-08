@@ -48,4 +48,8 @@
   .spotlights-card {
     grid-row: 2/3;
   }
+  /* Discover Page */
+  #discover-page {
+    margin-top: 0;
+  }
 }

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- prettier-ignore -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kathryn Lambert" />
+    <!-- prettier-ignore -->
+    <meta
+      name="description"
+      content="Homepage for the Anoka Minnesota Chamber of Commerce">
+    <!-- Social Media Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://kathrynruth8.github.io/wdd230/chamber/"
+    />
+    <meta property="og:title" content="Anoka, MN Chamber of Commerce" />
+    <!-- prettier-ignore -->
+    <meta property="og:type" content="article">
+    <!-- prettier-ignore -->
+    <meta
+      property="og:image"
+      content="https://afar.brightspotcdn.com/dims4/default/0b10150/2147483647/strip/false/crop/2000x1125+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F38%2Fda%2F5212b6d28b153d2254fc8d6cb1ab%2Foriginal-anokas-20roundabout-5b2-5d.jpg"
+    >
+    <title>Anoka Minnesota Chamber of Commerce | Home Page</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <img src="images/anoka-logo.png" alt="Anoka Chamber of Commerce Logo" />
+      <h1>Anoka Chamber of Commerce</h1>
+    </header>
+    <button id="menu" title="menu button"></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="discover-sidebar">
+        <div class="side-card">
+          <h2>Todays Events</h2>
+          <ul>
+            <ul>
+              <li><h3>Gobble Gobble Turkey Trot 5k</h3></li>
+              <li>Anoka Main Street</li>
+            </ul>
+            <ul>
+              <li><h3>Community Food Drive</h3></li>
+              <li>Anoka High School</li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <ul>
+            <h2>Things to Do in Anoka</h2>
+            <ul>
+              <li><h3>Lyric Arts</h3></li>
+              <li>420 E Main St, Anoka, MN 55303</li>
+            </ul>
+            <ul>
+              <li><h3>Anoka Aquatic Center</h3></li>
+              <li>1551 7th Ave, Anoka, MN 55303</li>
+            </ul>
+            <ul>
+              <li><h3>Antiques on Main</h3></li>
+              <li>212 E Main St. Anoka, MN 55303</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="side-card">
+          <img src="images/november.webp" alt="November Calendar" />
+        </div>
+      </section>
+      <section class="discover-main">
+        <div class="discover-card">
+          <h2>Upcomming Events</h2>
+          <ul>
+            <ul>
+              <li><h3>Light Up the Night Parade</h3></li>
+              <li>October 21</li>
+            </ul>
+            <ul>
+              <li><h3>Halloween Bonfire</h3></li>
+              <li>October 21</li>
+            </ul>
+            <ul>
+              <li><h3>Movie Night Hosted by The City of Anoka</h3></li>
+              <li>October 23</li>
+            </ul>
+            <ul>
+              <li><h3>Big Parade of Little People</h3></li>
+              <li>October 27</li>
+            </ul>
+            <ul>
+              <li><h3>38th Annual Anoka Gray Ghost Halloween 5K</h3></li>
+              <li>October 28</li>
+            </ul>
+            <ul>
+              <li><h3>Grande Day Parade</h3></li>
+              <li>October 28</li>
+            </ul>
+          </ul>
+        </div>
+        <section class="images">
+          <div class="image-card">
+            <img src="images/anoka-aquatic.webp" alt="Anoka Aquatic Center" />
+          </div>
+          <div class="image-card">
+            <img src="images/anoka-downtown.webp" alt="Anoka Downtown" />
+          </div>
+          <div class="image-card">
+            <img src="images/anoka-high.webp" alt="Anoka High School" />
+          </div>
+          <div class="image-card">
+            <img src="images/anoka-library.webp" alt="Anoka County Library" />
+          </div>
+          <div class="image-card">
+            <img src="images/anoka-main-street.webp" alt="Anoka Main Street" />
+          </div>
+          <div class="image-card">
+            <img
+              src="images/anoka-mississippi.webp"
+              alt="Mississippi river in Anoka"
+            />
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> | WDD230 Chamber of Commerce Project |
+        Kathryn Lambert - lam20005@byui.edu | MN
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>
