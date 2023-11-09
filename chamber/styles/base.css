@@ -73,6 +73,7 @@ nav ul {
   border: groove #39564d;
   margin: 1rem 0rem;
   align-items: center;
+  margin: 20px;
 }
 .card h2 {
   background-color: #39564d;
@@ -86,10 +87,12 @@ nav ul {
   font-family: 'Staatliches', sans-serif;
   text-align: center;
   padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 1px;
 }
 .card li {
   list-style: none;
-  margin: 12px;
+  margin: 2px;
   text-align: center;
 }
 .card ul {
@@ -205,7 +208,8 @@ nav ul {
 }
 
 .card p {
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin: 10px;
   margin-top: -10px;
+  padding: 10px;
 }

@@ -11,7 +11,7 @@
     width: auto;
     text-align: center;
   }
-  main {
+  #homepage {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-top: -15px;
@@ -27,8 +27,8 @@
     top: 100px;
   }
   .card {
-    margin: 1rem 0.5rem;
     grid-row: 2/3;
+    justify-content: center;
   }
   #menu {
     display: none;
@@ -51,5 +51,18 @@
   /* Discover Page */
   #discover-page {
     margin-top: 0;
+    display: grid;
+    grid-template-columns: 35% auto;
+    margin-top: -15px;
+  }
+  .card img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .hover:hover {
+    box-shadow: 0 0 50px rgba(51, 51, 51, 0.604);
   }
 }
