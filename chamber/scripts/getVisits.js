@@ -1,20 +1,29 @@
-// Initialize display element variable
-const visitsDisplay = document.querySelector('#visits');
+function displayMessage() {
+  const lastVisit = localStorage.getItem('lastVisit');
+  const currentDate = Date.now();
+  const millisecondsInADay = 24 * 60 * 60 * 1000;
 
-//Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
-let numVisits = Number(window.localStorage.getItem('numVisits-ls')) || 0;
+  if (!lastVisit) {
+    document.getElementById('visits').textContent =
+      'Welcome! Let us know if you have any questions.';
+  } else {
+    const daysBetween = Math.round(
+      (currentDate - lastVisit) / millisecondsInADay
+    );
 
-//Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
-if (numVisits !== 0) {
-  visitsDisplay.textContent = numVisits;
-} else {
-  visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+    if (daysBetween < 1) {
+      document.getElementById('visits').textContent = 'Back so soon! Awesome!';
+    } else {
+      const message =
+        daysBetween === 1
+          ? 'You last visited 1 day ago.'
+          : `You last visited ${daysBetween} days ago.`;
+      document.getElementById('visits').textContent = message;
+    }
+  }
+
+  localStorage.setItem('lastVisit', currentDate);
 }
 
-//increment the number of visits by one.
-numVisits++;
-
-//store the new visit total into localStorage, key=numVisits-ls
-localStorage.setItem('numVisits-ls', numVisits);
-
-// 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+// Call the displayMessage function when the page loads
+displayMessage();

@@ -2,12 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Page with LocalStorage</title>
+    <style>
+      #sidebar {
+        width: 200px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        float: left;
+      }
+    </style>
   </head>
   <body>
-    <h3 id="super"></h3>
-    <script src="testing.js"></script>
+    <div id="sidebar">
+      <h2>Sidebar Content</h2>
+      <p id="message"></p>
+    </div>
+
+    <script>
+      // Function to calculate the difference in days between two dates
+      function daysBetweenDates(date1, date2) {
+        const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+        return Math.round(Math.abs((date1 - date2) / oneDay));
+      }
+
+      // Function to display the appropriate message based on the time between visits
+      function displayMessage() {
+        const lastVisitString = localStorage.getItem('lastVisit');
+        const currentDate = new Date();
+        const lastVisitDate = lastVisitString
+          ? new Date(lastVisitString)
+          : null;
+
+        if (!lastVisitDate) {
+          // First visit
+          document.getElementById('message').textContent =
+            'Welcome! Let us know if you have any questions.';
+        } else {
+          const daysBetween = daysBetweenDates(currentDate, lastVisitDate);
+
+          if (daysBetween < 1) {
+            // Less than a day
+            document.getElementById('message').textContent =
+              'Back so soon! Awesome!';
+          } else {
+            // More than a day
+            const message =
+              daysBetween === 1
+                ? 'You last visited 1 day ago.'
+                : `You last visited ${daysBetween} days ago.`;
+            document.getElementById('message').textContent = message;
+          }
+        }
+
+        // Update localStorage with the current visit date
+        localStorage.setItem('lastVisit', currentDate.toISOString());
+      }
+
+      // Call the displayMessage function when the page loads
+      displayMessage();
+    </script>
   </body>
 </html>
