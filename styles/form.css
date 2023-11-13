@@ -52,7 +52,7 @@ form label.top input:required {
   border-left: red solid 6px;
 }
 form label.top input:required:valid {
-  border-left: #39564d solid 6px;
+  border-left: green solid 6px;
 }
 
 #r {
