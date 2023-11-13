@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/meduim.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/form.css" />
 
     <link rel="icon" href="lesson02/images/favicon.ico" />
   </head>
@@ -47,6 +48,7 @@
     </nav>
     <main>
       <form method="get" action="#">
+        <h1>Contact Us Form</h1>
         <fieldset>
           <legend>Information</legend>
           <label class="top"
@@ -61,7 +63,7 @@
               type="password"
               id="password"
               name="password"
-              pattern="[0-9a-zA-Z]{8}"
+              pattern="[A-Za-z0-9]{8, }"
               required
           /></label>
           <label class="top"
@@ -71,7 +73,42 @@
               name="password_retype"
               required
           /></label>
+          <div id="message"></div>
+          <label class="top"
+            >Email *<input
+              type="email"
+              id="email"
+              name="email"
+              pattern="[a-z0-9]+@byui.edu$"
+              title="Please enter a valid email"
+              required
+          /></label>
+          <label class="top" for="r">Page Rating </label>
+          <div id="rangevalue">0</div>
+          <input
+            type="range"
+            id="r"
+            name="r"
+            min="0"
+            max="10"
+            value="0"
+            step="1"
+            list="rangevalues"
+          />
+          <datalist id="rangevalues">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </datalist>
         </fieldset>
+        <input type="submit" value="Contact Us" class="submitBtn" />
       </form>
     </main>
     <footer>
@@ -82,5 +119,6 @@
     <script src="scripts/getVisits.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
   </body>
 </html>

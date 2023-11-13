@@ -1,0 +1,62 @@
+form fieldset {
+  margin: 2rem 1rem;
+  border: 1px solid #39564d;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+form h1 {
+  margin: 2rem 1rem;
+  margin-bottom: 0;
+  color: #39564d;
+}
+
+form legend {
+  color: #39564d;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #39564d;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #39564d;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: #39564d solid 6px;
+}
+
+#r {
+  color: #39564d;
+  width: 100%;
+  max-width: 20rem;
+}
