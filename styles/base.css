@@ -144,17 +144,6 @@ p {
   font-family: 'DM Sans', sans-serif;
 }
 
-.inside {
-  margin: 8px;
-  margin-left: 2%;
-  list-style: none;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
-}
-.inside :hover {
-  color: #daf2ec;
-}
-
 .lesson {
   margin: 2%;
   list-style: none;
@@ -175,6 +164,16 @@ p {
 }
 #visits p {
   color: #000;
+}
+#links p {
+  text-align: left;
+}
+#links a:hover {
+  color: #daf2ec;
+}
+#links {
+  margin: 8px;
+  margin-left: 2%;
 }
 
 /* hamburger */
