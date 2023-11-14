@@ -148,7 +148,15 @@
       </section>
       <section class="card">
         <h3>Information</h3>
-        <article id="weather"></article>
+        <article id="weather" class="weather">
+          <p>
+            Rexburg, Idaho | <span id="current-temp"></span> |
+            <span id="current-conditions"></span>
+          </p>
+          <figure>
+            <img id="weather-icon" src="" alt="" />
+          </figure>
+        </article>
         <p>
           <span class="label">Number of Visits: </span><span id="visits"></span>
         </p>
@@ -173,5 +181,6 @@
     <script src="scripts/getVisits.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/weather.js"></script>
   </body>
 </html>
