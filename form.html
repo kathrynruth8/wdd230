@@ -9,9 +9,9 @@
     <!-- prettier-ignore -->
     <meta
       name="description"
-      content="Kathryn Lambert's course assignment portal for WDD-230 Web Frontend Development Fall 2023.">
+      content="Kathryn Lambert's contact us form">
     <meta property="og:url" content="https://kathrynruth8.github.io/wdd230/" />
-    <meta property="og:title" content="WDD230 Assignment Portal" />
+    <meta property="og:title" content="Contact Us Form" />
     <!-- prettier-ignore -->
     <meta property="og:type" content="article">
     <!-- prettier-ignore -->
@@ -19,7 +19,7 @@
       property="og:image"
       content="https://afar.brightspotcdn.com/dims4/default/0b10150/2147483647/strip/false/crop/2000x1125+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F38%2Fda%2F5212b6d28b153d2254fc8d6cb1ab%2Foriginal-anokas-20roundabout-5b2-5d.jpg"
     >
-    <title>Kathryn Lambert - WDD 230 - Web Frontend Development</title>
+    <title>Kathryn Lambert - WDD 230 - Contact Us Form</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/meduim.css" />
@@ -63,7 +63,7 @@
               type="password"
               id="password"
               name="password"
-              pattern="[A-Za-z0-9]{8, }"
+              pattern="[A-Za-z0-9]{8,16}"
               required
           /></label>
           <label class="top"
@@ -71,6 +71,7 @@
               type="password"
               id="password_retype"
               name="password_retype"
+              pattern="[A-Za-z0-9]{8,16}"
               required
           /></label>
           <div id="message"></div>
