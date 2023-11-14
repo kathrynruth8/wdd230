@@ -30,3 +30,12 @@ section img {
   background-color: #ddd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+section {
+  grid-column: span 1;
+  margin: 0.2rem;
+}
