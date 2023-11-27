@@ -126,6 +126,13 @@ p {
   height: auto;
   object-fit: cover;
 }
+.hero h1 {
+  color: #3e4943;
+  padding: 1rem;
+  padding-top: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  margin: 2%;
+}
 
 .herolabel {
   position: absolute;
