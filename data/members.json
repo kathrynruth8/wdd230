@@ -1,0 +1,148 @@
+{
+  "members": [
+    {
+      "name": "Avant Garden Bookstore",
+      "address": [
+        {
+          "line1": "215 E. Main St.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 421-5036",
+      "website url": "https://www.avantgardenanoka.com/",
+      "image file name": "avant-garden.webp",
+      "membership level": "gold",
+      "description": "Neighborhood Bookstore & Coffee Bar"
+    },
+    {
+      "name": "Two Scoops",
+      "address": [
+        {
+          "line1": "1918 2nd Ave. S.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 323-0622",
+      "website url": "https://twoscoopsmn.com/",
+      "image file name": "two-scoops.webp",
+      "membership level": "gold",
+      "description": "Your Hometown Ice Cream Shoppe offering super premium hard ice cream."
+    },
+    {
+      "name": "Lyric Arts",
+      "address": [
+        {
+          "line1": "420 E. Main St.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 422-1838",
+      "website url": "https://www.lyricarts.org/",
+      "image file name": "lyric-arts.webp",
+      "membership level": "gold",
+      "description": "A growing professional theater that's deeply rooted in the communities we serve, producing inclusive work that entertains, educates, stimulates, and is reflective of the diversity of our audiences and artists."
+    },
+    {
+      "name": "Peterson Shoes",
+      "address": [
+        {
+          "line1": "209 E. Main St.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 421-3433",
+      "website url": "https://petersonshoes.com/",
+      "image file name": "peterson-shoes.webp",
+      "membership level": "gold",
+      "description": "Family-owned shoe first established in 1861."
+    },
+    {
+      "name": "Jenson's Dept. Store",
+      "address": [
+        {
+          "line1": "112 E. Main St.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 421-5343",
+      "website url": "https://www.jensonsstore.com/",
+      "image file name": "jensons.webp",
+      "membership level": "gold",
+      "description": "Your one-stop shop for the latest trends, classic basics, and everything in between."
+    },
+    {
+      "name": "Sparky's Cafe",
+      "address": [
+        {
+          "line1": "12 Bridge Sq.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 427-0076",
+      "website url": "https://www.facebook.com/p/Sparkys-Cafe-100069855283702/",
+      "image file name": "sparkys.webp",
+      "membership level": "gold",
+      "description": "Serving the best breakfast and lunch for over 30 years"
+    },
+    {
+      "name": "Truffles & Tortes Café",
+      "address": [
+        {
+          "line1": "206 E. Main St.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 432-7645",
+      "website url": "http://trufflesandtortes.com/",
+      "image file name": "truffles-and-tortes.webp",
+      "membership level": "gold",
+      "description": "Specializing in award-winning desserts. Serving breakfast, lunch, and desserts! "
+    },
+    {
+      "name": "The Big White House",
+      "address": [
+        {
+          "line1": "1900 3rd Ave. S.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 506-0562",
+      "website url": "https://www.thebigwhitehouse.net/",
+      "image file name": "white-house.webp",
+      "membership level": "gold",
+      "description": "Find Vintage, furniture, home decor, gifts, & antiques."
+    },
+    {
+      "name": "Dan Gould Jewelers",
+      "address": [
+        {
+          "line1": "120 E. Main St.",
+          "city": "Anoka",
+          "state": "MN",
+          "zipcode": "55303"
+        }
+      ],
+      "phone number": "(763) 427-2878",
+      "website url": "https://www.dangouldjewelers.com/",
+      "image file name": "dan-gould-jewelers.webp",
+      "membership level": "gold",
+      "description": "Family owned jeweler since 1878"
+    }
+  ]
+}
