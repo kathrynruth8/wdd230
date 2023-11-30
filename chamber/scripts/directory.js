@@ -7,4 +7,15 @@ async function getMemberData() {
   console.table(data.members);
   // displayMembers(data.members);
 }
+
+function displayMembers(members) {
+  members.forEach((member) => {
+    const card = document.createElement('section');
+    const name = document.createElement('h2');
+    const address = document.createElement('p');
+    const phone = document.createElement('p');
+    const website = document.createElement('p');
+    const description = document.createElement('p');
+  });
+}
 getMemberData();
