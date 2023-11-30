@@ -19,10 +19,13 @@ function displayMembers(members) {
     const description = document.createElement('p');
     const logo = document.createElement('img');
     const { street1, city, state, zipcode } = member.address;
-    // Build the text content 
+    // Build the text content
+    name.textContent = member.name;
     address.textContent = `${street1} ${city}, ${state} ${zipcode}`;
-    phone.textContent = ${member.phone number}
-    
+    phone.textContent = member.phone;
+    website.textContent = member.url;
+    description.textContent = member.description;
+    logo.setAttribute('src', member.image - url);
   });
 }
 getMemberData();
