@@ -10,12 +10,19 @@ async function getMemberData() {
 
 function displayMembers(members) {
   members.forEach((member) => {
+    // Create elements to add to the div.cards element
     const card = document.createElement('section');
     const name = document.createElement('h2');
     const address = document.createElement('p');
     const phone = document.createElement('p');
     const website = document.createElement('p');
     const description = document.createElement('p');
+    const logo = document.createElement('img');
+    const { street1, city, state, zipcode } = member.address;
+    // Build the text content 
+    address.textContent = `${street1} ${city}, ${state} ${zipcode}`;
+    phone.textContent = ${member.phone number}
+    
   });
 }
 getMemberData();
