@@ -145,11 +145,12 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 3rem #fff;
 }
-.herolabel h2 {
+.herolabel h3 {
   margin: 0;
   padding: 0.25rem;
   font-size: 2rem;
   font-family: 'DM Sans', sans-serif;
+  color: #3e4943;
 }
 
 .lesson {
