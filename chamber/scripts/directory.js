@@ -12,7 +12,8 @@ function displayMembers(members) {
   members.forEach((member) => {
     // Create elements to add to the div.cards element
     const card = document.createElement('section');
-    const name = document.createElement('h2');
+    card.id = 'member-card';
+    const name = document.createElement('h3');
     // const address = document.createElement('p');
     const phone = document.createElement('p');
     const website = document.createElement('p');

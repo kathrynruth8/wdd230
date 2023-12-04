@@ -213,3 +213,35 @@ nav ul {
   margin-top: -10px;
   padding: 10px;
 }
+
+/* Directory Page */
+#directory-cards {
+  border: groove #39564d;
+  margin: 1rem 0rem;
+  align-items: center;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+#member-card h2 {
+  background-color: #39564d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-block-start: 0px;
+}
+#member-card h3 {
+  color: #2d3047;
+  font-family: 'Staatliches', sans-serif;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 1px;
+}
+
+#member-card p {
+  font-size: 1rem;
+  margin: 10px;
+  margin-top: -10px;
+  padding: 10px;
+}
