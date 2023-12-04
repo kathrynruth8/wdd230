@@ -65,4 +65,8 @@
   .hover:hover {
     box-shadow: 0 0 50px rgba(51, 51, 51, 0.604);
   }
+  /* Directory Page */
+  #directory-cards {
+    margin-top: 0px;
+  }
 }
