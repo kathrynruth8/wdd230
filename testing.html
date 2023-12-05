@@ -6,93 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kathryn Lambert" />
+    <!-- prettier-ignore -->
     <meta
       name="description"
-      content="Kathryn Lambert's course assignment portal for WDD-230 Web Frontend Development Fall 2023."
+      content="Anoka Minnesota Chamber of Commerce Discover Page">
+    <!-- Social Media Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://kathrynruth8.github.io/wdd230/chamber/"
     />
-    <meta property="og:url" content="https://kathrynruth8.github.io/wdd230/" />
-    <meta property="og:title" content="WDD230 Assignment Portal" />
-    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Anoka, MN Chamber of Commerce" />
+    <!-- prettier-ignore -->
+    <meta property="og:type" content="website" />
     <!-- prettier-ignore -->
     <meta
       property="og:image"
       content="https://afar.brightspotcdn.com/dims4/default/0b10150/2147483647/strip/false/crop/2000x1125+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F38%2Fda%2F5212b6d28b153d2254fc8d6cb1ab%2Foriginal-anokas-20roundabout-5b2-5d.jpg"
     >
-    <title>Kathryn Lambert - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <title>Anoka Minnesota Chamber of Commerce | Discover Page</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/meduim.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-
-    <link rel="icon" href="lesson02/images/favicon.ico" />
+    <link rel="stylesheet" href="testing/testing.css" />
+    <link rel="icon" href="images/favicon.webp" />
   </head>
   <body>
     <header>
-      <img src="images/kathryn2.webp" alt="Profile Image" />
-      <h1>Kathryn Lambert</h1>
+      <img src="images/anoka-logo.webp" alt="Anoka Chamber of Commerce Logo" />
+      <h1>Anoka Chamber of Commerce</h1>
     </header>
     <button id="menu" title="menu button"></button>
     <nav>
-      <!-- ul>li*4 -> 4 lists -->
       <ul class="navigation">
         <li><a href="index.html">Home</a></li>
-        <li><a href="chamber/index.html">Chamber</a></li>
-        <li><a href="lesson01/chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="form.html">Form</a></li>
-        <li class="darkButton">
-          <button id="mode" title="dark mode button">☑</button>
-        </li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
     <main>
-      <div class="hero">
-        <div>
-          <h2>WDD 230: Web Frontend Development</h2>
-        </div>
-        <div class="herolabel">
-          <h2>Nauvoo Temple</h2>
-        </div>
-        <picture>
-          <source media="(max-width: 400px)" srcset="images/hero-small2.webp" />
-          <source
-            media="(max-width: 960px)"
-            srcset="images/hero-medium2.webp"
-          />
-          <img
-            src="images/hero-large2.webp"
-            alt="Nauvoo Temple"
-            width="1100"
-            height="750"
-          />
-        </picture>
+      <div class="menu">
+        <button id="grid">Grid</button>
+        <button id="list">List</button>
       </div>
-
-      <section class="card">
-        <h3>Learning Activities</h3>
-        <div id="links"></div>
-      </section>
-
-      <div class="google-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44974.04224442276!2d-93.43321653583003!3d45.20981149384971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b317bc617b8651%3A0x6b8c8cae8bbaf3e6!2sAnoka%2C%20MN!5e0!3m2!1sen!2sus!4v1697567863263!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+      <div id="directory-cards"></div>
     </main>
     <footer>
-      <p>&copy; <span id="year"></span> | Kathryn Lambert | MN</p>
+      <p>
+        &copy; <span id="year"></span> | WDD230 Chamber of Commerce Project |
+        Kathryn Lambert - lam20005@byui.edu | MN
+      </p>
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/getVisits.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/darkMode.js"></script>
-    <script src="scripts/weather.js"></script>
-    <!-- <script src="scripts/links.js"></script> -->
+    <script src="scripts/getVisits.js"></script>
+    <script src="testing/testing.js"></script>
   </body>
 </html>

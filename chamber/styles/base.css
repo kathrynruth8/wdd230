@@ -214,8 +214,8 @@ nav ul {
   padding: 10px;
 }
 
-/* Directory Page */
-.member-card {
+/* /* Directory Page */
+.grid .member-card {
   border: groove #39564d;
   margin: 1rem 0rem;
   align-items: center;
@@ -224,7 +224,7 @@ nav ul {
   grid-column: span 1;
 }
 
-.member-card h2 {
+.grid .member-card h2 {
   background-color: #39564d;
   color: white;
   text-align: center;
@@ -232,14 +232,14 @@ nav ul {
   margin-block-start: 0px;
 }
 
-.member-card p {
+.grid .member-card p {
   font-size: 1rem;
   margin: 10px;
   margin-top: -10px;
   padding: 5px;
 }
 
-.member-card a {
+.grid .member-card a {
   background-color: #39564d;
   color: white;
   text-decoration: none;
@@ -248,22 +248,24 @@ nav ul {
   margin: 50px;
 }
 
-.member-card a:hover {
+.grid .member-card a:hover {
   background-color: #417b5a;
 }
-.member-card img {
+.grid .member-card img {
   margin: 40px;
   width: 250px;
 }
-#directory-website {
+.grid #directory-website {
   margin: 20px;
 }
-#directory-cards {
+.grid {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-template-columns: repeat();
+  margin-top: 50px;
 }
+
 button {
   background-color: #39564d;
   color: white;
@@ -280,4 +282,39 @@ button:hover {
 
 .menu {
   text-align: center;
+}
+
+/* testing directory page */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.list section > * {
+  margin: 0 1rem;
+}
+
+.list section img {
+  display: none; /* smaller viewports only */
+}
+
+.list section h2 {
+  margin-bottom: 0px;
+}
+
+.list section:nth-child(even) {
+  background-color: #d3eaee;
+}
+.list .member-card {
+  margin: 0 auto;
+  padding: 0.25rem;
+  max-width: 900px;
+  background-color: #fff;
 }
