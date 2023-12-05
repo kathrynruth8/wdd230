@@ -42,7 +42,9 @@ header img {
   justify-content: space-around;
   margin-right: 20px;
 }
-
+iframe {
+  border: none;
+}
 main {
   margin-top: -17px;
 }
