@@ -33,6 +33,7 @@ function displayMembers(members) {
     address.textContent = `${member.address}`;
     phone.textContent = member.phone;
     description.textContent = member.description;
+    description.id = 'directory-description';
     website.setAttribute('href', member.url);
     websiteBox.id = 'directory-website';
     websiteBox.appendChild(website);

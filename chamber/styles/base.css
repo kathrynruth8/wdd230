@@ -292,9 +292,12 @@ button:hover {
 
 .list section {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   margin: 0;
   padding: 0.25rem;
+  height: 60px;
+  align-items: center;
+  text-align: center;
 }
 
 .list section > * {
@@ -302,14 +305,21 @@ button:hover {
 }
 
 .list section img {
-  display: none; /* smaller viewports only */
+  display: none;
+}
+
+.list #directory-description {
+  display: none;
 }
 
 .list section h2 {
-  margin-bottom: 0px;
+  margin: 10px;
+}
+.list section p {
+  margin: 10px;
 }
 
-.list section:nth-child(even) {
+.list section:nth-child(odd) {
   background-color: #d3eaee;
 }
 .list .member-card {
@@ -317,4 +327,18 @@ button:hover {
   padding: 0.25rem;
   max-width: 900px;
   background-color: #fff;
+}
+#directory-cards.list {
+  margin: 10px;
+}
+.list .member-card a {
+  background-color: #39564d;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.list .member-card a:hover {
+  background-color: #417b5a;
 }
