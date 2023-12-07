@@ -9,7 +9,7 @@
     <!-- prettier-ignore -->
     <meta
       name="description"
-      content="Homepage for the Anoka Minnesota Chamber of Commerce">
+      content="Join page for the Anoka Minnesota Chamber of Commerce">
     <!-- Social Media Meta Tags -->
     <meta
       property="og:url"
@@ -17,13 +17,13 @@
     />
     <meta property="og:title" content="Anoka, MN Chamber of Commerce" />
     <!-- prettier-ignore -->
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="website">
     <!-- prettier-ignore -->
     <meta
       property="og:image"
       content="https://afar.brightspotcdn.com/dims4/default/0b10150/2147483647/strip/false/crop/2000x1125+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F38%2Fda%2F5212b6d28b153d2254fc8d6cb1ab%2Foriginal-anokas-20roundabout-5b2-5d.jpg"
     >
-    <title>Anoka Minnesota Chamber of Commerce | Home Page</title>
+    <title>Anoka Minnesota Chamber of Commerce | Join Page</title>
     <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
@@ -44,20 +44,117 @@
       </ul>
     </nav>
     <main>
-      <form method="get" action="thankyou.html">
-        <h1>Join the Anoka Chamber of Commerce</h1>
+      <div id="join-container">
+      <div id="join-form">
+      <h1>Join the Anoka Chamber of Commerce</h1>
+      <form method="get" action="thankyou.html"></form>
         <fieldset>
           <legend>Information</legend>
-          <label class="top">First Name *</label
-          ><input type="text" id="firstname" name="firstname" required />
-
-          <label class="top">Last Name *</label
-          ><input type="text" id="lastname" name="lastname" required />
-
-          <label class="top">Posistion or Title *</label
-          ><input type="text" id="title" name="title" required />
+            <form action="thankyou.html" method="get">
+              <div>
+                <label for="firstName">First Name *</label>
+                <input class="join-input" type="text" id="firstName" name="firstName" required />
+              </div>
+              <div>
+                <label for="lastName">Last Name *</label>
+                <input class="join-input" type="text" id="lastName" name="lastName" required />
+              </div>
+              <div>
+                <label for="position">Position/Title </label>
+                <input
+                  class="join-input"
+                  type="text"
+                  name="position"
+                  id="position"
+                  pattern="[a-zA-Z\- ]{7,}$"
+                />
+              </div>
+              <div>
+                <label for="email">Email *</label>
+                <input
+                  class="join-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="youremail@gmail.com"
+                />
+              </div>
+              <div>
+                <label for="email">Phone Number *</label>
+                <input class="join-input" type="telephone" name="phone" id="phone" required />
+              </div>
+              <div>
+                <label for="businessName">Business/Organization Name *</label>
+                <input class="join-input" type="text" name="business" id="business" required />
+              </div>
+              <div>
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel">
+                  <option value="NP">NP Membership</option>
+                  <option value="Bronze">Bronze Membership</option>
+                  <option value="Silver">Silver Membership</option>
+                  <option value="Gold">Gold Membership</option>
+                </select>
+              </div>
+              <div>
+                <label for="description"
+                  >Business/Organization's Description:</label
+                >
+                <textarea id="description" name="description"></textarea>
+              </div>
+              <input
+                type="hidden"
+                id="timestamp"
+                name="timestamp"
+                value="current_timestamp_here"
+              />
+              <div>
+                <input type="submit" value="Submit" class="submitBtn"/>
+              </div>
+            </form>
         </fieldset>
       </form>
+    </div>
+      <!-- Display benefits for each membership level -->
+      <!-- For example: -->
+      <div id="benefits">
+        <h1>Membership Benefits</h1>
+  <ul>
+    <li>
+      <h3>NP Membership</h3>
+      <ul>
+        <li>No Fee</li>
+        <li>Access to Resources</li>
+        <li>Networking Opportunities</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Bronze Membership</h3>
+      <ul>
+        <li>Basic Event Discounts</li>
+        <li>Quarterly Newsletter</li>
+        <li>Online Visibility</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Silver Membership</h3>
+      <ul>
+        <li>Enhanced Event Discounts</li>
+        <li>Training Workshops</li>
+        <li>Featured Spotlight</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Gold Membership</h3>
+      <ul>
+        <li>Exclusive Event Access</li>
+        <li>Personalized Support</li>
+        <li>Advertising Opportunities</li>
+      </ul>
+    </li>
+  </ul>
+      </div>
+    </div>
     </main>
     <footer>
       <p>

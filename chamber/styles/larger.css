@@ -69,4 +69,14 @@
   #directory-cards {
     margin-top: 0px;
   }
+  /* Join Page */
+  #join-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  #benefits,
+  #join-form {
+    max-width: 100%;
+    margin: 20px 20px;
+  }
 }
