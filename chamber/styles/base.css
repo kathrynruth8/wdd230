@@ -396,13 +396,13 @@ form input.submitBtn {
   font-family: 'Merriweather', Serif;
 }
 
-#join-form h1,
-#benefits h1 {
+#join-form h2,
+#benefits h2 {
   text-align: center;
   color: #39564d;
   font-size: 40px;
 }
-#thanks h1 {
+#thanks h2 {
   color: #39564d;
   font-size: 40px;
 }
