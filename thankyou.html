@@ -47,70 +47,11 @@
       </ul>
     </nav>
     <main>
-      <form method="get" action="thankyou.html">
-        <h1>Contact Us Form</h1>
-        <fieldset>
-          <legend>Information</legend>
-          <label class="top"
-            >Username *<input
-              type="text"
-              id="username"
-              name="username"
-              required
-          /></label>
-          <label class="top"
-            >Password *<input
-              type="password"
-              id="password"
-              name="password"
-              pattern="[A-Za-z0-9]{8,16}"
-              required
-          /></label>
-          <label class="top"
-            >Retype Password *<input
-              type="password"
-              id="password_retype"
-              name="password_retype"
-              pattern="[A-Za-z0-9]{8,16}"
-              required
-          /></label>
-          <div id="message"></div>
-          <label class="top"
-            >Email *<input
-              type="email"
-              id="email"
-              name="email"
-              pattern="[a-z0-9]+@byui.edu$"
-              title="Please enter a valid email"
-              required
-          /></label>
-          <label class="top" for="r">Page Rating </label>
-          <div id="rangevalue">0</div>
-          <input
-            type="range"
-            id="r"
-            name="r"
-            min="0"
-            max="10"
-            value="0"
-            step="1"
-            list="rangevalues"
-          />
-          <datalist id="rangevalues">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </datalist>
-        </fieldset>
-        <input type="submit" value="Contact Us" class="submitBtn" />
-      </form>
+      <div id="thanks">
+        <h2>Thank You!</h2>
+        <!-- Your gratitude message or thank you note -->
+        <p>Thank you for filling out the form. We'll be in touch shortly.</p>
+      </div>
     </main>
     <footer>
       <p>&copy; <span id="year"></span> | Kathryn Lambert | MN</p>
