@@ -253,7 +253,7 @@ nav ul {
 }
 .grid .member-card img {
   margin: 40px;
-  width: 250px;
+  width: 75%;
 }
 .grid #directory-website {
   margin: 20px;
@@ -279,8 +279,9 @@ button:hover {
   background-color: #417b5a;
 }
 
-.menu {
-  text-align: center;
+div.menu {
+  display: none;
+  /* text-align: center; */
 }
 
 /* testing directory page */
