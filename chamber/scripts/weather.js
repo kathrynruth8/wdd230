@@ -1,13 +1,13 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('.weather-caption');
 
 const date = document.querySelector('#dateTime');
 const high = document.querySelector('#high');
 const low = document.querySelector('#low');
 const icon = document.querySelector('#forecastIcon');
-const weatherDesc = document.querySelector('figcaption');
+const weatherDesc = document.querySelector('.weather-caption');
 
 const url =
   'https://api.openweathermap.org/data/2.5/weather?lat=43.82&lon=111.79&appid=4f95f54f9f3274981432648406c80731&units=imperial';
