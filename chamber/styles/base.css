@@ -418,3 +418,35 @@ form input.submitBtn {
   max-width: 800px;
   margin: 20px auto;
 }
+
+/* Weather */
+#forecastCurrent {
+  text-align: center;
+}
+.list-info {
+  padding-bottom: 20px;
+}
+#weather-icon {
+  width: 30%;
+}
+#threeDayForecast img {
+  width: 30%;
+}
+#forecast {
+  text-align: center;
+}
+.forecast-item {
+  margin-bottom: 20px;
+}
+
+/* Spotlights */
+.spotlights-card img {
+  width: 50%;
+}
+
+/* Banner */
+.meet-greet-banner {
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}

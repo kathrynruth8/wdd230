@@ -30,6 +30,10 @@
     <link rel="icon" href="images/favicon.webp" />
   </head>
   <body>
+    <div class="meet-greet-banner" id="meetGreetBanner">
+      <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+      <button id="closeBannerButton">Close</button>
+    </div>
     <header>
       <img src="images/anoka-logo.webp" alt="Anoka Chamber of Commerce Logo" />
       <h1>Anoka Chamber of Commerce</h1>
@@ -69,42 +73,31 @@
             <li>Anoka Halloween</li>
           </ul>
         </section>
-        <section class="card">
-          <h2>Weather in Anoka</h2>
-          <ul>
-            <li>This is the weather in Anoka Minnesota</li>
-          </ul>
+        <section class="card" id="forecastCurrent">
+          <h2>Current Weather</h2>
+          <div class="forecastCurrent">
+            <div id="weather" class="weather">
+              <div class="list-info">
+                <figure>
+                  <img id="weather-icon" src="#" alt="weather icon" />
+                </figure>
+                <span id="current-temp"></span>
+                <figcaption></figcaption>
+              </div>
+            </div>
+          </section>
+          <section class="card" id="threeDayForecast">
+            <div class="forecastContainer">
+              <h2>Weather Forecast</h2>
+              <div id="forecast">
+              </div>
+            </div>
+          </div>
         </section>
         <section class="spotlights">
           <h2>Spotlights</h2>
-          <section class="spotlights-card">
-            <h3>Spotlight 1</h3>
-            <a href=""></a>
-            <ul>
-              <li>This will have stuff about spotlight 1</li>
-              <li>Spotlight 1 Email</li>
-              <li>Spotlight 1 Phone</li>
-              <li>Spotlight 1 Website</li>
-            </ul>
-          </section>
-          <section class="spotlights-card">
-            <h3>Spotlight 2</h3>
-            <ul>
-              <li>This will have stuff about spotlight 2</li>
-              <li>Spotlight 2 Email</li>
-              <li>Spotlight 2 Phone</li>
-              <li>Spotlight 2 Website</li>
-            </ul>
-          </section>
-          <section class="spotlights-card">
-            <h3>Spotlight 3</h3>
-            <ul>
-              <li>This will have stuff about spotlight 3</li>
-              <li>Spotlight 3 Email</li>
-              <li>Spotlight 3 Phone</li>
-              <li>Spotlight 3 Website</li>
-            </ul>
-          </section>
+          <section class="spotlights-card" id="spotlight1"></section>
+          <section class="spotlights-card" id="spotlight2"></section>
         </section>
       </section>
     </main>
@@ -117,5 +110,8 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
   </body>
 </html>

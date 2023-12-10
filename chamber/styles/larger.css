@@ -16,6 +16,9 @@
     grid-template-columns: 2fr 1fr;
     margin-top: -15px;
   }
+  #threeDayForecast {
+    grid-column: 1/3;
+  }
   .hero-image {
     grid-column: 1/3;
     margin-top: 0px;
@@ -27,7 +30,6 @@
     top: 100px;
   }
   .card {
-    grid-row: 2/3;
     justify-content: center;
   }
   #menu {
@@ -40,7 +42,7 @@
     text-align: center;
     grid-column: 1/3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .spotlights h2 {
     grid-column: 1/4;
@@ -78,5 +80,10 @@
   #join-form {
     max-width: 100%;
     margin: 20px 20px;
+  }
+  #forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
   }
 }
